@@ -1,0 +1,45 @@
+.view, .error{
+  text-align: center;
+  color: white;
+}
+
+.location{
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+.date{
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.temperature{
+  margin-bottom: 20px;
+  background-color: rgba(255,255,255,0.2);
+  display: inline-block;
+  padding: 40px;
+  font-size: 5rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+}
+
+.state{
+  font-size: 1.5rem;
+}
+
+.feels_like{
+  font-weight: lighter;
+  margin-bottom: 20px;
+
+  & span{
+    background-color: rgba(62, 172, 40, 0.2);
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.error_code{
+  font-size: 3rem;
+}

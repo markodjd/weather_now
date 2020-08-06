@@ -1,0 +1,10 @@
+<div *ngIf="!error && city" class="view">
+  <h1 class="location">{{city?.name}}, {{city?.country}}</h1>
+  <h2 class="date">{{(city?.date - 7200 + city?.timezone) * 1000 | date: 'EEEE, MMMM d, y, H:mm'}}</h2>
+  <h3 class="temperature">{{window().Math.round(city?.temperature)}}&deg;C</h3>
+  <h3 class="feels_like">Feels like <span>{{window().Math.round(city?.feels_like)}}&deg;C</span></h3>
+  <h4 class="state">{{city?.state}}</h4>
+</div>
+<div *ngIf="error" class="error">
+  <h1 class="error_code">Error {{error?.status}} {{error?.error.message}}</h1>
+</div>

@@ -1,0 +1,4 @@
+<main [ngClass]="{'rain': city?.state === 'Rain', 'clouds': city?.state === 'Clouds', 'clear': city?.state === 'Clear', 'thunderstorm': city?.state === 'Thunderstorm'}" class="main">
+  <app-search></app-search>
+  <app-view></app-view>
+</main>
