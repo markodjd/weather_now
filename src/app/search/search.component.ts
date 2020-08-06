@@ -49,6 +49,7 @@ export class SearchComponent implements OnInit {
       navigator.geolocation.getCurrentPosition((position) => {
         this.params.lat = position.coords.latitude;
         this.params.lon = position.coords.longitude;
+        console.log(this.params.lat, this.params.lon)
 
         this.getCityWeather();
       });
